@@ -49,15 +49,18 @@ After all the data are downloaded, follow the jupyter notebook
 You can train directly without doing first/second level analysis (they served as EDA)
 
 ## Demo, Demo, Demo
-Since the dataset is over 100GBs, we provide a demo pipeline. You don't need 
+Since the dataset is over 100GBs, we provide a demo pipeline to test the functionality of the model
 
 ```bash
 make demo_data # download demo data
 make demo # run analysis and generate results
 ```
+
 ## Full training and testing 
 
 ```bash
 make data
 make full
 ```
+
+The `results.ipynb` generate figures and tables from cross-validation results
