@@ -7,17 +7,29 @@ requires-python = ">=3.13"
 dependencies = [
     "basedpyright>=1.31.4",
     "boto3>=1.40.29",
+    "einops>=0.8.1",
     "fmriprep>=25.0.0",
     "fmriprep-docker>=25.1.4",
+    "huggingface-hub>=1.2.1",
     "jupyter>=1.1.1",
     "nibabel>=5.3.2",
+    "nilearn>=0.12.1",
     "pandas>=2.3.2",
     "pandas-stubs>=2.3.2.250827",
     "ruff>=0.13.0",
+    "scikit-image>=0.25.2",
     "seaborn>=0.13.2",
     "statsmodels>=0.14.5",
+    "torch>=2.8.0",
+    "torchvision>=0.23.0",
     "tqdm>=4.67.1",
+    "unittest-prettify>=1.0.post4",
 ]
 
 [tool.basedpyright]
 typeCheckingMode = "standard"
+
+[tool.uv.workspace]
+members = [
+    "pecnn",
+]

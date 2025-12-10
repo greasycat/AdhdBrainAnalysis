@@ -26,7 +26,7 @@ else
     uv run download_derivatives.py --ids control_subjects_ids.txt adhd_subjects_ids.txt \
         --s3-uri s3://openneuro/ds000030/ds000030_R1.0.5/uncompressed/ \
         --type fmriprep \
-        --tasks rest scap \
+        --tasks rest scap stopsignal taskswitch \
         --output-dir $PREP_DIR 
 
 fi

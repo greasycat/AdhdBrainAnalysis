@@ -302,9 +302,9 @@ def main():
         func_local_path = os.path.join(args.output_dir, f"{subject_id}", "func")
         
         for task in args.tasks:
-            print(f"Downloading functional data for task: {task}")
-            file_pattern = f"{subject_id}_task-{task}"
-            download_s3_files(s3_client, bucket_name, func_s3_prefix, func_local_path, file_pattern)
+            # print(f"Downloading functional data for task: {task}")
+            # file_pattern = f"{subject_id}_task-{task}"
+            # download_s3_files(s3_client, bucket_name, func_s3_prefix, func_local_path, file_pattern)
 
             task_analysis_s3_prefix = f"{prefix_derivatives}{'task'}/{subject_id}/{task}.feat/"
             task_analysis_local_path = os.path.join(args.output_dir, "task", f"{subject_id}",  f"{task}.feat")

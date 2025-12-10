@@ -9,7 +9,10 @@ wheels/
 # Virtual environments
 .venv
 
-data
+data/sub*/
+data/.datalad/
+data/annex-uuid/
+data/.gitattributes
 derivatives
 working
 results
@@ -17,3 +20,7 @@ results
 working_group/
 group_results/
 group_level_analysis/
+CNP_level_analysis/
+CNP_task_analysis/
+_results/
+*.pth
